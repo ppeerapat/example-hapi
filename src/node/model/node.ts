@@ -5,3 +5,6 @@ export default interface INode {
   children: INode[];
   parent_id?: string;
 }
+export interface TransformNodeRequest {
+  [key: string]: INode[];
+}

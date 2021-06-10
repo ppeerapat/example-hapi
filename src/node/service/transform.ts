@@ -1,8 +1,4 @@
-import INode from "../model/node";
-
-interface TransformNodeRequest {
-  [key: string]: INode[];
-}
+import INode, { TransformNodeRequest } from "../model/node";
 
 const isConsecutive = (array: any[]) => {
   for (let i = 1; i < array.length; i++) {
