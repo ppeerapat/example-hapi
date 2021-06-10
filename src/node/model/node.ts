@@ -1,9 +1,9 @@
 export default interface INode {
-  id: string;
+  id: string | number;
   title: string;
   level: number;
   children: INode[];
-  parent_id?: string;
+  parent_id?: string | number;
 }
 export interface TransformNodeRequest {
   [key: string]: INode[];

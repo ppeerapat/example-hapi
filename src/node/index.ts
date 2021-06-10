@@ -1,4 +1,5 @@
 import { Server } from "@hapi/hapi";
+
 import nodeController from "./controller";
 
 export default {
