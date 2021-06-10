@@ -12,8 +12,7 @@ export default {
   },
   handler: async (req: Request, h: ResponseToolkit) => {
     const requestQuery: any = req.query;
-    console.log(requestQuery);
-    // const result = await getQuery();
-    return "result";
+    const result = await getQuery(requestQuery);
+    return h.view("repo", result);
   },
 };

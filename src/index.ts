@@ -1,5 +1,7 @@
 import { createServer } from "./server";
-
+require("@babel/register")({
+  extensions: [".es6", ".es", ".jsx", ".js", ".mjs", ".tsx"],
+});
 const init = async () => {
   try {
     const server = await createServer();

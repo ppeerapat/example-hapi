@@ -1,5 +1,5 @@
-export interface query {
+export interface IQuery {
   query: string;
   limit: number;
-  offset: number;
+  page: number;
 }
