@@ -4,7 +4,7 @@ import { transformNode } from "../service/transform";
 
 export default {
   method: "POST",
-  path: "/node",
+  path: "/node/transform",
   options: {
     validate: {
       payload: Schema,
